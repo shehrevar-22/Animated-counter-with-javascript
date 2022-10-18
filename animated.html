@@ -1,0 +1,165 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2113.6">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="en"&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta charset="UTF-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;title&gt;Project - JavaScript Animated Counter&lt;/title&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&amp;display=swap" rel="stylesheet"&gt;</p>
+<p class="p1">&lt;style&gt;* {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>box-sizing: border-box;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>margin: 0;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>padding: 0;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.heading {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-size: 1.6rem;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>padding: 3rem 0;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>background: #ffe99f;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-family: sans-serif;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.counter-container {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>justify-content: space-evenly;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>flex-wrap: wrap;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>padding: 2rem 0;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.social {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>width: 20%;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>justify-content: center;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>flex-direction: column;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>padding: 1rem 0;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.social-icon {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-size: 2rem;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>color: #fff;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>border-radius: 50%;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.social-icon i {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>padding: 0.7rem;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>border-radius: 50%;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.fa-youtube {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>background: #c4302b;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.fa-twitter {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>background: #00acee;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.fa-facebook {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>background: #3b5998;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.fa-linkedin {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>background: #0077b5;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.social p {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-size: 1.5rem;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-family: sans-serif;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>padding: 10px 0;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.social h3 {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-size: 2.5rem;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-weight: 700;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-family: "Nunito", sans-serif;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">@media screen and (max-width: 768px) {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.heading {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-size: 1.2rem;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>.counter-container {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>flex-direction: column;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1">}&lt;/style&gt;&lt;/head&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;header class="heading"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h1&gt;Our Supporters&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/header&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;main class="counter-container"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="social"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="social-icon"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;i class="fab fa-youtube"&gt;&lt;/i&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;p&gt;Subscribers&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;h3 class="counter" data-count="21035"&gt;0&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="social"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="social-icon"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;i class="fab fa-twitter"&gt;&lt;/i&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;p&gt;Followers&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;h3 class="counter" data-count="8025"&gt;0&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="social"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="social-icon"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;i class="fab fa-facebook"&gt;&lt;/i&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;p&gt;Likes&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;h3 class="counter" data-count="125312"&gt;0&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="social"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="social-icon"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;i class="fab fa-linkedin"&gt;&lt;/i&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;p&gt;Connections&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;h3 class="counter" data-count="625"&gt;0&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/main&gt;</p>
+<p class="p1">&lt;script&gt;// select the element</p>
+<p class="p1">const counters = document.querySelectorAll('.counter');</p>
+<p class="p2"><br></p>
+<p class="p1">// iterate through all the counter elements</p>
+<p class="p1">counters.forEach(counter =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>// function to increment the counter</p>
+<p class="p1"><span class="Apple-converted-space">  </span>function updateCount() {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const target = +counter.getAttribute('data-count');</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const count = +counter.innerHTML;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>const inc = Math.floor((target - count) / 100);</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>if (count &lt; target &amp;&amp; inc &gt; 0) {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>counter.innerHTML = (count + inc);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>// repeat the function</p>
+<p class="p1"><span class="Apple-converted-space">      </span>setTimeout(updateCount, 1);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>// if the count not equal to target, then add remaining count</p>
+<p class="p1"><span class="Apple-converted-space">    </span>else {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>counter.innerHTML = target;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>updateCount();</p>
+<p class="p1">});&lt;/script&gt;&lt;/body&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
