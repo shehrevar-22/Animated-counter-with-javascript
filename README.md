@@ -15,6 +15,9 @@ It will select all the elements with the class counter and store them in a varia
 The function updateCounter will do the following things:<br>
 * Get the target value of the counter stored as a data-count attribute.<br>
 * Get the current value of the counter.<br>
-* Starting from 0, if we increase the current value by 1, it will take a long time to reach the target value for larger numbers. So create a variable increment that will increase the counter by 100th part of the remaining target value every time the function is called. i.e increment = (target - current) / 100.,br>
-* Now, check if the current value is less than the target value and increment > 0. If yes, then increment the current value by increment and call the function again.<br>
+* Starting from 0, if we increase the current value by 1, it will take a long time to reach the target value for larger numbers. So create a variable     
+  increment that will increase the counter by 100th part of the remaining target value every time the function is called. i.e increment = (target -    
+  current) / 100.<br>
+* Now, check if the current value is less than the target value and increment > 0. If yes, then increment the current value by increment and call the 
+  function again.<br>
 * If the increment becomes 0 then simply set the current value to the target value.<br>
