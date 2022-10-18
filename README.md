@@ -1,6 +1,8 @@
 # Animated-counter-with-javascript
-You would have already seen animated numbers counters on some fancy websites. These are numbers counters that instead of directly showing the number, are animated and show the number in a smooth manner as they increase.<br>
- <b>HTML Structure :</b><br>
+![animated-counter-javascript](https://user-images.githubusercontent.com/113840033/196403293-a4c8a4ee-23b9-40f6-adb1-27b4a2b3075f.gif)
+<br>You would have already seen animated numbers counters on some fancy websites. These are numbers counters that instead of directly showing the number, are animated and show the number in a smooth manner as they increase.<br>
+
+ <br><b>HTML Structure :</b><br>
 1. Use <main> tag and create the main container of the application by giving it class counter-container.<br>
 2. Use the <div> element to create a container for the social media presence counter.<br>
 3. Within this element, create 3 elements:<br>
